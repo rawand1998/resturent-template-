@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.banner{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width: 100%;
+    min-height:100vh;
+    background-image: url('https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&w=600');
+background-size: cover;
+background-repeat: no-repeat;
+position: relative;
+
+}
+.banner .content{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    max-width: 900px;
+    flex-direction: column;
+    text-align: center;
+}
+.content h2{
+    font-size:5em;
+    font-weight:700;
+    color: #fff;
+}
+.content p {
+    color: #fff;
+    font-size:1em;
+    font-weight: 300;
+}
+.content .btn{
+    color: #fff;
+    font-size: 1em;
+    padding: 10px 30px;
+    margin-top: 20px;
+    transition: 0.5s;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #ff0157;
+    display: inline-block;
+}
+.btn:hover{
+    letter-spacing: 6px;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    transition:0.5s;
+    top: 0;
+    left: 0;
+    position:fixed;
+    z-index: 1000;
+    padding: 40px 100px;
+ 
+}
+header .logo{
+    text-decoration: none;
+    color: #fff;
+    font-size: 2em;
+    font-weight:700
+}
+.logo span{
+    color: #ff0157;
+}
+header ul{
+    display: flex;
+}
+header ul li {
+    list-style: none;padding: 10px;
+}
+li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight:500
+}
+li a:hover{
+    color: #ff0157;
+}
+
+header.sticky{
+    background-color: rgba(0,0,0,0.5)
+    ;padding: 10px 100px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.05)
+
+}
+section{
+    padding:100px
+}
+.about .row{
+    display: flex;
+    width: 100%;
+    justify-content:space-between;
+   position: relative;
+}
+.col50{
+    position: relative;
+    width: 50%;
+}
+ h2{
+    font-size: 2em;
+    color: #111;
+    font-weight:300
+
+}
+ h2 span{
+    color: #ff0157;
+    font-size:1.5em;
+    font-weight:700
+}
+p{
+    color: #111;
+    font-weight: 300;
+}
+.imgBox {
+    width: 100%;
+
+    position: relative;
+    background-color: #ff0;
+    height: 100%;
+}
+.imgBox img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+   
+}
+.col50 p {
+    padding-right: 15px;
+    line-height:1.5;
+    padding-top: 15px;
+    
+}
+.menu .content{
+display:flex;justify-content:center;
+flex-direction:row-reverse;
+flex-wrap: wrap;
+margin-left:40px
+}
+.title{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box{
+    width: 340px;
+    margin: 20px auto;
+    border: 1px solid #fff;
+    box-shadow:0 5px 35px rgba(0,0,0,0.08)
+}
+.box .imgBox{
+    height:300px;
+    width: 100%;position: relative;
+
+}
+.imgBox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.box .text{
+    padding: 15px 0 5px;
+   
+}
+.text h3{
+    font-weight:400;
+
+}
+.text h3:hover{
+    color: #ff0157;
+    cursor: pointer;
+}
+.expert .content{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:row;flex-wrap: wrap;
+    margin-top:40px;
+}
+.expert .content .box{
+    width: 250px;
+    margin: 15px;
+}
+.expert .content .box .imgBox{
+    height:300px;
+    width: 100%;position: relative;
+}
+
+.expert .content .box  .imgBox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.box .text{
+    padding: 15px 0 5px;
+   
+}
+.expert .text h3{
+    font-weight:400;
+color: #111;
+}
+.testimonal{
+    background-image: url('https://images.pexels.com/photos/1565982/pexels-photo-1565982.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-size:cover
+}
+.testimonal .content{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color: #fff;
+}
+.testimonal .title p{
+    color: #fff;
+}
+.testimonal .title h2{
+    color: #fff;
+}
+.testimonal .content .box{
+    width: 340px;margin: 20px;padding:40px;
+    background-color: #fff;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+}
+.testimonal .content .box .imgBox{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius:50%;
+    overflow: hidden;
+}
+
+.testimonal .content .box .imgBox .img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.testimonal .content .text p{
+    color:#666;
+    font-style: italic;
+
+    line-height:1.5;
+    /* padding: 10px 5px; */
+}
+.testimonal .content .text h3{
+    color: #ff0157;
+    margin-top:20px;font-size:1em;
+    font-weight:600
+}
+.contact{
+    background-image: url('https://images.unsplash.com/photo-1495195134817-aeb325a55b65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGZvb2QlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60');
+    background-size: cover;
+  
+}
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    padding: 75px 50px;background-color: #fff;
+    max-width: 500px;
+    margin-top:50px;
+    box-shadow:0 15px 50px rgba(0, 0, 0, 0.1);
+ 
+}
+.contactForm h3{
+    color: #111;font-size:1.2em;
+    font-weight:500;
+    margin-bottom:20px
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-bottom:20px;
+}
+.contactForm .inputBox textarea,
+.contactForm .inputBox input{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+outline: none;
+font-size: 16px;
+font-weight: 300;
+
+}
+.contactForm .inputBox input[type="submit"]{
+    background-color:#ff0157;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    font-size:1em;
+    text-transform: uppercase;
+    letter-spacing:2px;
+    transition: 0.5s;
+    max-width:100px;
+    font-family: 500;
+    cursor:pointer;
+
+}
